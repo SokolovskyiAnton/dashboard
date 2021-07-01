@@ -1,7 +1,8 @@
 const menu = [
     {
         name: 'Главная',
-        to: '/home'
+        to: '/',
+        exact: 'exact'
     },
     {
         name: 'Категории',

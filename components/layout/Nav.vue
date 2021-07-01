@@ -1,6 +1,6 @@
 <template>
     <nav class="aside">
-      <nav-item v-for="(item, key) in menu" :key="key" :to="item.to">{{item.name}}</nav-item>
+      <nav-item v-for="(item, key) in menu" :key="key" :to="item.to" :exact="item.exact">{{item.name}}</nav-item>
       <button class="btn btn-danger" @click="$emit('onLogout')">Выйти</button>
     </nav>
 </template>

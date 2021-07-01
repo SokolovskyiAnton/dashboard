@@ -52,7 +52,7 @@ import {ValidationObserver, ValidationProvider} from 'vee-validate'
                     const response = await this.$auth.loginWith('local', {
                         data: this.formData
                     })
-                    this.$router.push('/home')
+                    this.$router.push('/')
                 } catch (err) {
                     this.loginFormError = err.response.data.message
                 }

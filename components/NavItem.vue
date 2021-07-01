@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link class="link" :to="to">
+    <nuxt-link class="link" :to="to" :exact="exact">
         <slot />
     </nuxt-link>
 </template>
@@ -9,6 +9,10 @@ export default {
     name: 'NavItem',
     props: {
         to: {
+            type: String,
+            default: ''
+        },
+        exact: {
             type: String,
             default: ''
         }
